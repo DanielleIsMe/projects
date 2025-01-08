@@ -1,0 +1,92 @@
+/*Selectors are used to select the HTML elements you want to style. you can modify multiple elements
+by putting a comma between each element*/
+html {
+    width: 650px;
+}
+body {
+    background-color: rgb(254, 213, 255);
+    /*borders are used to separate the content of an element from its surrounding elements.*/
+    border: solid 5px rgb(110, 0, 101);
+    /*margins generate space between the border of an element and surrounding elements. we can change the
+    margin for specific directions by using margin-left, margin-top, margin-right and margin-bottom*/
+    margin: 10px;
+    border-radius: 20px;
+    /*Padding generates space between the content and the border of an element.  we can change the
+    padding for specific directions by using padding-left, padding-top, padding-right and padding-bottom.
+    alternatively, we can set the padding property for specific directions in a single line like
+    "padding: 20px 0 20px 0" from top, right, bottom then left, leaving out "px" for empty padding.*/
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2 {
+    /*we can change the alignment of the text by using text-align*/
+    text-align: center;
+    border: solid 5px rgb(224, 170, 220);
+    border-radius: 50px;
+    background-color: rgb(224, 170, 220);
+    padding: 3px 0 3px 0
+}
+/*In CSS, a class is a selector that allows you to apply styles to multiple 
+elements on a web page. Classes are defined in a CSS file and can be applied 
+to HTML elements using the class attribute.*/
+.purple-text {
+    color: rgb(110, 0, 101);
+}
+p {
+    /*like padding, we can use shorthand to change the margin for specific directions*/
+    margin: 0 20px 0 20px
+}
+a {
+    color: rgb(0, 82, 102);
+    font-weight: bold;
+    font-style: italic;
+    /*display: block; makes the link fill the width of the container*/
+    display: block;
+    text-align: center;
+    background-color: rgb(168, 206, 216);
+    border: solid 1px rgb(168, 206, 216);
+    border-radius: 50px;
+    margin: 5px 30px 5px 30px;
+    padding: 3px 0 3px 0;
+}
+/*We are using the ID attribute from our img tag for our 
+selector in the below line of code*/
+#picture {
+    border: solid 5px rgb(110, 0, 101);
+    /*we can also use shorthand to change the border radius for specific directions starting from
+    top-left and going clockwise*/
+    border-radius: 10px 100px 10px 100px;
+}
+button {
+    color: rgb(0, 82, 102);
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    background-color: rgb(168, 206, 216);
+    border: solid 1px rgb(168, 206, 216);
+    border-radius: 50px;
+    margin: 0 0 0 10px;
+}
+input, select {
+    margin: 0 0 20px 0;
+    border: solid 5px rgb(224, 170, 220);
+    border-radius: 50px;
+    background-color: rgb(224, 170, 220);
+    color: rgb(110, 0, 101);
+}
+input {
+    margin: 0 0 0 20px
+}
+#result {
+    color: rgb(110, 0, 101);
+    margin: 0 70px 0 70px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    border: solid 5px rgb(221, 170, 220);
+    border-radius: 50px;
+    background-color: rgb(224, 170, 220);
+    padding: 3px 0 3px 0;
+    height: 18px;
+}
