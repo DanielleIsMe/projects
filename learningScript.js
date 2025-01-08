@@ -399,3 +399,79 @@ greetUser();
 //The script element is the last element before the closing </body> tag in the HTML structure.
 //Similar to CSS, we use a separate file to write JavaScript. 
 // To do this, we include a src attribute that links to the file we want to use.
+
+//If we want to retrieve an individual HTML element, 
+// we can use the querySelector() method from document.
+//To select a specific element, we add a selector inside parentheses. 
+// We can use an HTML tag, like the p tag if we want to get the paragraph.
+
+//querySelector() works with all selectors, like tags, classes, and ID's. 
+// If we're looking for an ID, we add the # at the beginning.
+
+//querySelector() only retrieves the first element it finds.
+
+function skynet() {
+    const paragraph = document.querySelector("p");
+    console.log(paragraph);
+}
+
+//If several elements share a class, like .prompt here, we can specify its tag.
+//We specify p.prompt inside parentheses to select the paragraph with the .prompt class.
+
+function skynet() {
+    const paragraph = document.querySelector("p.prompt");
+    console.log(paragraph);
+}
+
+//We can also look for an element that has multiple classes. 
+// Before we can see that work, add the class name update to the second paragraph.
+
+function skynet() {
+    const paragraph = document.querySelector("prompt.update");
+    console.log(paragraph);
+}
+
+//what if we want to access more than one element at a time? 
+// For example, what if we wanted to count items in a list?
+//We can get a collection of elements of the same tag type 
+// with getElementsByTagName().
+
+function skynet() {
+    const listItems = document.getElementsByTagName("li");
+    console.log(listItems);
+}
+
+//Collections are similar to arrays. 
+// They work with indices that start from 0.
+//Just like arrays, we can also access the length property of the collection.
+
+function skynet() {
+    const listItems = document.getElementsByTagName("li");
+    console.log(listItems.length);
+}
+
+//If we want to return a collection that contains specific elements of a class, 
+// we can use the getElementsByClassName() method instead.
+
+function skynet() {
+    const listItems = document.getElementsByClassName("update");
+    console.log(listItems);
+}
+
+//Since getElementsByClassName() also returns a collection, 
+// we can then access each element through the index
+
+function skynet() {
+    const el = document.getElementsByClassName("urgent");
+    const p = document.querySelector("p");
+    p.innerHTML = el[0].innerHTML;
+}
+
+//To access multiple elements that have more than one class, 
+// we just add the classes with a space in between.
+
+function skynet() {
+    const el = document.getElementsByClassName("urgent update");
+    console.log(el);
+}
+
