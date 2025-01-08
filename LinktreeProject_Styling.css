@@ -1,8 +1,11 @@
 /*Selectors are used to select the HTML elements you want to style. you can modify multiple elements
 by putting a comma between each element*/
+html, body {
+    height: 100%;
+}
 html {
-    width: 600px;
-    vertical-align: middle;
+    display: table;
+    margin: auto;
 }
 body {
     background-color: rgb(254, 213, 255);
