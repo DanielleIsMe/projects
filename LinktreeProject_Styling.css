@@ -6,6 +6,7 @@ html, body {
 html {
     display: table;
     margin: auto;
+    max-width: 600px;
 }
 body {
     background-color: rgb(254, 213, 255);
