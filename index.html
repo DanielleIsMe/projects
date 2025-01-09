@@ -19,19 +19,29 @@
      elements on a web page. Classes are defined in a CSS file and can be applied 
      to HTML elements using the class attribute.-->
     <body class="purple-text">
+    <!--The div element is used to group other HTML elements into sections, making it ideal for structuring 
+    content into different sections on a webpage. all elements inside of the div elements inherit 
+    the div class and id-->
+<div class="wrapper">
     <!-- the img element allows us to display an image using a local file or url-->
     <!-- The id attribute in HTML is used to specify a unique identifier for an 
      HTML element, which allows us to use it's ID as a selector in our 
      stylingsheet-->
-    <img src="logo.jpeg" height="200" width="200" id="picture">
+    <div class="one">
+        <img src="logo.jpeg" height="200" width="200" id="picture">
+    </div>
     <!--Interactive webpages often use buttons to react to clicks from visitors. 
     However, without more information, a button tag is useless. To react to clicks 
     from visitors, a button tag needs the onclick attribute.-->
 
     <!--To create a button users can click on, we need the opening 
     <button> and closing </button> tags.-->
-    <button onmouseover="show()" onmouseleave="hide()" id="secretK">Secret Knowledge</button> 
+
+    <div id="two">
+    <button onmouseover="showSecret()" onmouseleave="hideSecret()" id="secretK">Secret Knowledge</button> 
     <p id="secret"></p>
+    </div>
+</div>
     <!-- the h1 element is a heading element that is used to define the heading on the page. 6 different headings
     are available from h1 to h6, and change size and formatting to indicate levels of importance-->
     <h1>Danielle's Portfolio</h1>
@@ -120,6 +130,7 @@
             <option value="milesToKm">Miles to Kilometers</option>
             <option value="kmToMiles">Kilometers to Miles</option>
         </select>
+        
         <button onclick="convert()">Convert!</button>
         <button onclick="clearString()">Clear!</button>
         <p id="result"></p>

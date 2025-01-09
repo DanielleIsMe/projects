@@ -3,11 +3,11 @@
 //then, we can access the HTML elements of our webpage using 
 // the document keyword. document represents our webpage.
 //Now, to interact with an HTML element, we need the document.getElementById() instruction.
-function show() {
+function showSecret() {
     //we use the innerHTML property to change the content of an HTML element.
     document.getElementById("secret") .innerHTML = "Women are pretty <3";
 }
-function hide() {
+function hideSecret() {
     document.getElementById("secret") .innerHTML = "";
 }
 
