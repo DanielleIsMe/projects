@@ -475,3 +475,7 @@ function skynet() {
     console.log(el);
 }
 
+//There's another powerful way of getting array-like lists 
+// of elements, and that's with the querySelectorAll() method.
+//querySelectorAll() works with both tag and class names
+
