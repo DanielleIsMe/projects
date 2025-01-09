@@ -64,6 +64,7 @@ selector in the below line of code*/
     /*we can also use shorthand to change the border radius for specific directions starting from
     top-left and going clockwise*/
     border-radius: 10px 100px 10px 100px;
+    height: 200px;
 }
 button {
     color: rgb(0, 82, 102);

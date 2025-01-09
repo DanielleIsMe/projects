@@ -10,7 +10,7 @@ function showSecret() {
 }
 function hideSecret() {
     const img = document.getElementById("secret")
-    img.removeAttribute("src");
+    img.removeAttribute("src" , "");
 }
 
 //logical expression function to convert a value in miles to kilometers and vice versa. this code
