@@ -14,9 +14,14 @@
     <!--The type attribute specifies the type of input. For example, 
     we can hide what users type for better security with type="password".-->
     <input type="number" id="input" placeholder="Please type a number" required>
+    <!--In HTML, we use the select element to create a dropdown list of options for user input.-->
     <select id="unitSelect" type="text">
-        <option value="milesToKm">Miles to Kilometers</option>
-        <option value="kmToMiles">Kilometers to Miles</option>
+        <!--Inside the <select> tag, we include <option> tags.-->
+        <!--We can include as many options as we want. For every option, we need an opening and closing option tag.-->
+        <!--The selected attribute determines the pre-selected option in a dropdown list. if one isnt set, the browser
+        will automatically select and display the first one-->
+        <option selected value="1">Miles to Kilometers</option>
+        <option value="2">Kilometers to Miles</option>
     </select>
     
     <button onclick="convert()">Convert!</button>

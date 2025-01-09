@@ -546,4 +546,91 @@ function changeQuestionType() {
     el.type = "checkbox";
 }
 
-//this function will pull the input element and change it's type attribute to 
+//this function will pull the input element and change it's type attribute to checkbox.
+
+//To access an element's styling, we first have to add the style attribute. We can then specify the exact style we want, like .color.
+//If we want to change an element's style, we have to make sure we put the value in between quotes.
+
+function changeColor() {
+    const el = document.querySelector("p");
+    el.style.color = "#d7465f";
+}
+
+//If we have properties with multiple words like background-color, we have to turn them into camel case. Here, we'll use backgroundColor.
+
+function changeColor() {
+    const el = document.querySelector("p");
+    el.style.backgroundColor= "#d7465f";
+}
+
+//Changing the style with JavaScript works no matter if the previous style was set inline or through a stylesheet.
+
+//we can show an elements style attribute by pullingthe value from an element.
+
+function showColor() {
+    const el = document.querySelector("p");
+    const div = document.querySelector("div");
+    div.innerText = el.style.backgroundColor;
+}
+
+//We've seen how we can change HTML attributes. There's also a quicker way to do this with JavaScript methods.
+
+//To get an attribute's value we can use the getAttribute() method. We place the element first, followed by . and getAttribute().
+
+function displayAttribute() {
+    const img = document.querySelector("img");
+    const imageLink = img.getAttribute();
+}
+
+//Inside the parentheses, we specify any attribute we want to get. Here, we'll code src inside quotes to get the image source.
+
+function displayAttribute() {
+    const img = document.querySelector("img");
+    const imageLink = img.getAttribute("src");
+}
+
+//We can confirm we got the value by printing the imageLink variable in the p of our index.html file.
+
+function displayAttribute() {
+    const img = document.querySelector("img");
+    const imageLink = img.getAttribute("src");
+    p.innerText = imageLink
+}
+
+//getAttribute() also works if we want to get all the values of a given attribute, like the multiple style values.
+
+function displayAttribute() {
+    const el = document.querySelector("a");
+    const linkStyles = el.getAttribute("style");
+    const p = document.querySelector('p');
+    p.innerText = linkStyles;
+}
+//this will display all of the values in the style attribute.
+
+//aside from pulling attributes, we can also set or update attributes using the setAttribute() expression.
+//in the parentheses, we have to specify which attribute we want to set, and then the value of the attribute, seperated by a comma.
+
+function displayAttribute() {
+    const img = document.querySelector("img");
+    const imageLink = img.getAttribute("src");
+    const p = document.querySelector('p');
+    p.innerText = imageLink;
+    img.setAttribute("src" , "https://mimo.app/r/kittles.png");
+}
+//this will update the src attribute inside of our img element, and display a new picture.
+
+//There's a reason why we haven't used setAttribute() to set classes. If we use it to change a class, it overrides the previous class.
+//There's a better way to add and remove classes and it's with a property called classList.
+
+//Inside the add() method, we code the class we want to add to the element.
+function addBold() {
+    const el = document.querySelector("p");
+    el.classList.add("bold");
+    //classes can also be removed from an element. to remove a class, we code the remove() method.
+    el.classList.remove("bold");
+    //If we want to automatically add or remove a class when we call the function, we can use the toggle() method.
+    el.classList.toggle("bold");
+    //We can also add multiple classes to an element at the same time. this also works for removing and toggling.
+    el.classList.add("bold", "underline");
+}
+

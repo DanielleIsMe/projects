@@ -15,11 +15,11 @@ function hideSecret() {
 //block is responsible for the conversion of the values.
 function convert() {
 //getElementById() method returns the HTML element that has the ID attribute with the specified value.
-const selectElement = document.getElementById("unitSelect");
-//value property sets or returns the value of the value attribute of a text field.
-const selectedValue = selectElement.value;
+//To access the input from a select element, we need to get the element and use .value. 
+//We can use document.getElementById() to do that.
+const selectElement = document.getElementById("unitSelect").value;
 const inputElement = document.getElementById("input").value;
-let milesToKm = selectedValue === "milesToKm";
+let milesToKm = selectElement === "1";
 let result = 0;
 
 if (milesToKm) {
