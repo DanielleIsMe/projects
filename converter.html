@@ -20,8 +20,13 @@
         <!--We can include as many options as we want. For every option, we need an opening and closing option tag.-->
         <!--The selected attribute determines the pre-selected option in a dropdown list. if one isnt set, the browser
         will automatically select and display the first one-->
-        <option selected value="1">Miles to Kilometers</option>
+        <!--When we add the attribute disabled, the option will be shown but can't be selected.-->
+        <!--When combining disabled with selected, the option will be selected by default but once it's changed, you can't select it again.-->
+        <option disabled selected value="0">Please select a conversion</option>
+        <option value="1">Miles to Kilometers</option>
         <option value="2">Kilometers to Miles</option>
+        <!--When we add the attribute disabled, the option will be shown but can't be selected.-->
+        <!--When combining disabled with selected, the option will be selected by default but once it's changed, you can't select it again.-->
     </select>
     
     <button onclick="convert()">Convert!</button>

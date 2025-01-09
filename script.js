@@ -17,6 +17,7 @@ function convert() {
 //getElementById() method returns the HTML element that has the ID attribute with the specified value.
 //To access the input from a select element, we need to get the element and use .value. 
 //We can use document.getElementById() to do that.
+//Knowing how to get user input, we can use it to update a webpage like in this convert() function.
 const selectElement = document.getElementById("unitSelect").value;
 const inputElement = document.getElementById("input").value;
 let milesToKm = selectElement === "1";
