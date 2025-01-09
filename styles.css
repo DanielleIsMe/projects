@@ -171,3 +171,10 @@ input {
     grid-column: 3;
     grid-row: 1;
 }
+
+#secret {
+    width:200px;
+    border: auto;
+    border-radius: 100px;
+    padding: 5px 0 0 0;
+}

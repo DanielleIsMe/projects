@@ -5,10 +5,12 @@
 //Now, to interact with an HTML element, we need the document.getElementById() instruction.
 function showSecret() {
     //we use the innerHTML property to change the content of an HTML element.
-    document.getElementById("secret") .innerHTML = "Women are pretty <3";
+    const img = document.getElementById("secret")
+    img.setAttribute("src" , "chewingcharacter.gif");
 }
 function hideSecret() {
-    document.getElementById("secret") .innerHTML = "";
+    const img = document.getElementById("secret")
+    img.removeAttribute("src");
 }
 
 //logical expression function to convert a value in miles to kilometers and vice versa. this code
