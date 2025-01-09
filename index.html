@@ -22,6 +22,7 @@
     <!--The div element is used to group other HTML elements into sections, making it ideal for structuring 
     content into different sections on a webpage. all elements inside of the div elements inherit 
     the div class and id-->
+    <!--Elements inside of a div element are called nexted elements-->
 <div class="wrapper">
     <!-- the img element allows us to display an image using a local file or url-->
     <!-- The id attribute in HTML is used to specify a unique identifier for an 
@@ -37,9 +38,15 @@
     <!--To create a button users can click on, we need the opening 
     <button> and closing </button> tags.-->
 
-    <div id="two">
-    <button onmouseover="showSecret()" onmouseleave="hideSecret()" id="secretK">Secret Knowledge</button> 
-    <p id="secret"></p>
+    <div class="two">
+        <button onmouseover="showSecret()" onmouseleave="hideSecret()" id="secretK">Secret Knowledge</button> 
+        <p id="secret"></p>
+    </div>
+
+    <div class="three">
+        <a href="skills.html">Skills</a>
+        <a href="Converter.html">Converter</a>
+        <a href="feedback.html">Submit Feedback!</a>
     </div>
 </div>
     <!-- the h1 element is a heading element that is used to define the heading on the page. 6 different headings
@@ -60,92 +67,7 @@
         </h3>
         <p>I will be using this account to document my learning journey in web development. Thinking 
             of updating it either every other day or on a weekly basis</p>
-    <h2>Skills I Have Learnt</h2>
-        <p>
-        <ul>
-
-            <p class="skillSection">HTML</p>
-            <ul class="skills">
-                <li class="skillsHTML">attributes (href, img, rel, height, width)</li>
-                <li class="skillsHTML">IDs</li>
-                <li class="skillsHTML">classes</li>
-                <li class="skillsHTML">headings</li>
-                <li class="skillsHTML">paragraphs</li>
-                <li class="skillsHTML">lists</li>
-                <li class="skillsHTML">links</li>
-                <li class="skillsHTML">images</li>
-                <li class="skillsHTML">buttons</li>
-                <li class="skillsHTML">forms </li>
-                <li class="skillsHTML">tables</li>
-                <li class="skillsHTML">Empty Elements (img, br, doctype)</li>
-            </ul>          
-
-            <p class="skillSection">CSS</p>
-            <ul class="skills">
-                <li class="skillsCSS">selectors</li>
-                <li class="skillsCSS">borders</li>
-                <li class="skillsCSS">margins</li>
-                <li class="skillsCSS">padding</li>
-                <li class="skillsCSS">alignment</li>
-                <li class="skillsCSS">classes</li>
-                <li class="skillsCSS">IDs</li>
-                <li class="skillsCSS">font</li>
-                <li class="skillsCSS">colors</li>
-                <li class="skillsCSS">shorthand properties</li>
-                <li class="skillsCSS">link displays</li>
-            </ul>
-
-            <p class="skillSection">JavaScript</p>
-            <ul class="skills">
-                <li class="skillsJS">functions</li>
-                <li class="skillsJS">variables</li>
-                <li class="skillsJS">operators</li>
-                <li class="skillsJS">comparisons </li>
-                <li class="skillsJS">logical expressions</li>
-                <li class="skillsJS">if/else statements</li>
-                <li class="skillsJS">console.log()</li>
-                <li class="skillsJS">getElementById()</li>
-                <li class="skillsJS">querySelector()</li>
-                <li class="skillsJS">getElementsByTagName()</li>
-                <li class="skillsJS">getElementsByClassName()</li>
-                <li class="skillsJS">collections[]</li>
-                <li class="skillsJS">querySelectorAll()</li>
-            </ul>
-            <button class="skillsButton" onmousedown="showSkillsTotal()" onmouseup="hideSkillsTotal()">
-                Display number of skills learned
-            </button>
-        <p class="resultSkills" id="resultSkillsTotal"></p>
-
-        </ul>
-        </p>
-    <h2>Miles to Kilometer Converter</h2>
-        <p>This converter is an exercise in logical functions using JavaScript.<br><br></p>
-        <!--In HTML, we use the input element to get all kinds of user input like 
-        emails, passwords, dates, and more.-->
-        <!--The placeholder attribute hints at what a user should type into the field.-->
-        <!--The type attribute specifies the type of input. For example, 
-        we can hide what users type for better security with type="password".-->
-        <input type="number" id="input" placeholder="Please type a number" required>
-        <select id="unitSelect" type="text">
-            <option value="milesToKm">Miles to Kilometers</option>
-            <option value="kmToMiles">Kilometers to Miles</option>
-        </select>
-        
-        <button onclick="convert()">Convert!</button>
-        <button onclick="clearString()">Clear!</button>
-        <p id="result"></p>
-
-    <h2>Feedback</h2>
-        <p>This is a textarea element that I am planning to use to gather feedback from site 
-        visitors</p><br>
-        <p>Please leave some feedback / advice below. any guidance along my 
-        learning journey is appreciated! NOTE: This is currently an 
-        empty shell and does not store any data!!!</p>
-        <!--the textarea element works similarly to input-->
-        <textarea id="adviceText" rows="5" placeholder="Please write your feedback here"></textarea>
-        <p id="feedbackThanks"></p>
-        <br>
-        <button id="feedbackSubmit" onclick="adviceSubmission()">Submit Feedback</button>
+    
     <!--The <script> tag in HTML is used to embed or reference executable JavaScript code within 
         an HTML document.-->
     <!--The src attribute specifies the URL of an external script file. 

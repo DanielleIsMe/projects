@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Miles to Kilometers Converter</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        
+    <h2>Miles to Kilometer Converter</h2>
+    <p>This converter is an exercise in logical functions using JavaScript.<br><br></p>
+    <!--In HTML, we use the input element to get all kinds of user input like 
+    emails, passwords, dates, and more.-->
+    <!--The placeholder attribute hints at what a user should type into the field.-->
+    <!--The type attribute specifies the type of input. For example, 
+    we can hide what users type for better security with type="password".-->
+    <input type="number" id="input" placeholder="Please type a number" required>
+    <select id="unitSelect" type="text">
+        <option value="milesToKm">Miles to Kilometers</option>
+        <option value="kmToMiles">Kilometers to Miles</option>
+    </select>
+    
+    <button onclick="convert()">Convert!</button>
+    <button onclick="clearString()">Clear!</button>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+    </body>
+</html>

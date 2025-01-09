@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Skills</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h2>Skills I Have Learnt</h2>
+        <p>
+        <!--the ul element displays nested LI elements as a unordered list with dot points-->
+        <!--the ol element displays nested LI elements as a ordered list.  this ensures that
+        each item is displayed in a numerical order-->
+        <ul>
+
+            <p class="skillSection">HTML</p>
+            <ul class="skills">
+                <li class="skillsHTML">attributes (href, img, rel, height, width)</li>
+                <li class="skillsHTML">IDs</li>
+                <li class="skillsHTML">classes</li>
+                <li class="skillsHTML">headings</li>
+                <li class="skillsHTML">paragraphs</li>
+                <li class="skillsHTML">lists</li>
+                <li class="skillsHTML">links</li>
+                <li class="skillsHTML">images</li>
+                <li class="skillsHTML">buttons</li>
+                <li class="skillsHTML">forms </li>
+                <li class="skillsHTML">tables</li>
+                <li class="skillsHTML">Empty Elements (img, br, doctype)</li>
+            </ul>          
+
+            <p class="skillSection">CSS</p>
+            <ul class="skills">
+                <li class="skillsCSS">selectors</li>
+                <li class="skillsCSS">borders</li>
+                <li class="skillsCSS">margins</li>
+                <li class="skillsCSS">padding</li>
+                <li class="skillsCSS">alignment</li>
+                <li class="skillsCSS">classes</li>
+                <li class="skillsCSS">IDs</li>
+                <li class="skillsCSS">font</li>
+                <li class="skillsCSS">colors</li>
+                <li class="skillsCSS">shorthand properties</li>
+                <li class="skillsCSS">link displays</li>
+            </ul>
+
+            <p class="skillSection">JavaScript</p>
+            <ul class="skills">
+                <li class="skillsJS">functions</li>
+                <li class="skillsJS">variables</li>
+                <li class="skillsJS">operators</li>
+                <li class="skillsJS">comparisons </li>
+                <li class="skillsJS">logical expressions</li>
+                <li class="skillsJS">if/else statements</li>
+                <li class="skillsJS">console.log()</li>
+                <li class="skillsJS">getElementById()</li>
+                <li class="skillsJS">querySelector()</li>
+                <li class="skillsJS">getElementsByTagName()</li>
+                <li class="skillsJS">getElementsByClassName()</li>
+                <li class="skillsJS">collections[]</li>
+                <li class="skillsJS">querySelectorAll()</li>
+            </ul>
+            <button class="skillsButton" onmousedown="showSkillsTotal()" onmouseup="hideSkillsTotal()">
+                Display number of skills learned
+            </button>
+        <p class="resultSkills" id="resultSkillsTotal"></p>
+
+        </ul>
+        </p>
+        <script src="script.js"></script>
+        </body>
+    </html>
