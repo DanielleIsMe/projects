@@ -513,3 +513,37 @@ function displayItems() {
 //With buttons, programs change webpages based on user behavior. For example, 
 // clicking Next can run code that cycles through characters.
 
+//We've seen how to change the text of an HTML element. Let's now learn how to 
+// change HTML attributes with JavaScript.
+
+//Once we've accessed an element with JavaScript, we can get its attributes by adding a . followed by the attribute name.
+
+//For example, after we've stored an img element inside the el variable, we write el.src to get the attribute value.
+
+function showAttribute() {
+    const el = document.querySelector("img");
+    const paragraph = document.querySelector("p");
+    paragraph.innerText = el.src;
+   }
+
+//this function will pull the attribute value for the img element and display it in the p element.
+
+//Most attributes can be accessed this way.
+
+//We can also update attribute values. When doing so, we have to remember to place values in between quotes.
+
+function changeAttribute() {
+    const el = document.querySelector("img");
+    el.src = "https://mimo.app/r/kittles.png";
+   }
+
+//this function will pull the img element and set the src attribute to a new image.
+
+//We can even use attributes to change how elements work and behave on a webpage.
+
+function changeQuestionType() {
+    const el = document.querySelector("input");
+    el.type = "checkbox";
+}
+
+//this function will pull the input element and change it's type attribute to 
