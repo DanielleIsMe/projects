@@ -479,3 +479,34 @@ function skynet() {
 // of elements, and that's with the querySelectorAll() method.
 //querySelectorAll() works with both tag and class names
 
+//querySelectorAll() can also be used to look for specific element 
+// like h3, with a class name of news.
+
+function displayItems() {
+    const el = document.querySelectorAll("h3.news");
+    const p = document.querySelector("p");
+    p.innerText = el.length;
+}
+
+//The querySelectorAll() lets us do more advanced searches, like accessing 
+// elements of two different classes at the same time.
+
+//In this example, we're looking for elements of either class movie or tech.
+//use a comma between each class in the brackets to search for multiple classes.
+
+function displayItems() {
+    const el = document.querySelectorAll(".movie, .tech");
+    const p = document.querySelector("p");
+    p.innerText = el.length;
+}
+
+//We can even combine selectors like classes, tags, or IDs
+
+function displayItems() {
+    const el = document.querySelectorAll(".movie, #tech, button");
+    const p = document.querySelector("p");
+    p.innerText = el.length;
+}
+
+//querySelectorAll() allows us to select all elements and not just one like querySelector()
+

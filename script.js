@@ -55,3 +55,36 @@ function clearString() {
     const inputElement = document.getElementById("input");
     inputElement.value = "";
 }
+
+function showSkillsTotalHTML() {
+    const li = document.querySelectorAll(".skillsHTML");
+    const p = document.querySelector("#resultSkillsHTML");
+    p.innerText = li.length;
+}
+
+function hideSkillsTotalHTML() {
+    const p = document.querySelector("#resultSkillsHTML");
+    p.innerText = "";
+}
+
+function showSkillsTotalCSS() {
+    const li = document.querySelectorAll(".skillsCSS");
+    const p = document.querySelector("#resultSkillsCSS");
+    p.innerText = li.length;
+}
+
+function hideSkillsTotalCSS() {
+    const p = document.querySelector("#resultSkillsCSS");
+    p.innerText = "";
+}
+
+function showSkillsTotalJS() {
+    const li = document.querySelectorAll(".skillsJS");
+    const p = document.querySelector("#resultSkillsJS");
+    p.innerText = li.length;
+}
+
+function hideSkillsTotalJS() {
+    const p = document.querySelector("#resultSkillsJS");
+    p.innerText = "";
+}

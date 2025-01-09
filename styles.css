@@ -116,3 +116,20 @@ input {
     padding: 3px 0 3px 0;
     height: 18px;
 }
+
+.resultSkills {
+    color: rgb(110, 0, 101);
+    margin: 10px 150px 10px 75px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    border: solid 5px rgb(221, 170, 220);
+    border-radius: 50px;
+    background-color: rgb(224, 170, 220);
+    padding: auto;
+    height: 18px;
+}
+
+.skillsButton {
+    margin: 0 0 0 75px
+}
