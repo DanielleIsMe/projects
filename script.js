@@ -18,30 +18,30 @@ function convert() {
 const selectElement = document.getElementById("unitSelect");
 //value property sets or returns the value of the value attribute of a text field.
 const selectedValue = selectElement.value;
-const inputElement = document.getElementById("input");
-const inputValue = inputElement.value;
+const inputElement = document.getElementById("input").value;
 let milesToKm = selectedValue === "milesToKm";
 let result = 0;
 
 if (milesToKm) {
     //toFixed() method formats a number using fixed-point notation, or rounding to a 
     // specified number of decimal places.
-    result = (inputValue * 1.60934).toFixed(2) + " kilometers";
+    result = (inputElement * 1.60934).toFixed(2) + " kilometers";
 } else {
-    result = (inputValue / 1.60934).toFixed(2) + " miles";
+    result = (inputElement / 1.60934).toFixed(2) + " miles";
 }
 
-let resultString = inputValue + " miles is equal to " + result + ".";
+let resultString = inputElement + " miles is equal to " + result + ".";
 
 if (milesToKm) {
-    resultString = inputValue + " miles is equal to " + result + "!";
+    resultString = inputElement + " miles is equal to " + result + "!";
 } else {
-    resultString = inputValue + " kilometers is equal to " + result + "!";
+    resultString = inputElement + " kilometers is equal to " + result + "!";
 }
 
 console.log(resultString);
 
 let resultElement = document.getElementById("result");
+document.getElementById("input").value="";
 resultElement.innerHTML = resultString;
 
 }
@@ -56,35 +56,21 @@ function clearString() {
     inputElement.value = "";
 }
 
-function showSkillsTotalHTML() {
-    const li = document.querySelectorAll(".skillsHTML");
-    const p = document.querySelector("#resultSkillsHTML");
+function showSkillsTotal() {
+    const li = document.getElementsByTagName("li")
+    const p = document.querySelector("#resultSkillsTotal");
     p.innerText = li.length;
 }
 
-function hideSkillsTotalHTML() {
-    const p = document.querySelector("#resultSkillsHTML");
+function hideSkillsTotal() {
+    const p = document.querySelector("#resultSkillsTotal");
     p.innerText = "";
 }
 
-function showSkillsTotalCSS() {
-    const li = document.querySelectorAll(".skillsCSS");
-    const p = document.querySelector("#resultSkillsCSS");
-    p.innerText = li.length;
-}
-
-function hideSkillsTotalCSS() {
-    const p = document.querySelector("#resultSkillsCSS");
-    p.innerText = "";
-}
-
-function showSkillsTotalJS() {
-    const li = document.querySelectorAll(".skillsJS");
-    const p = document.querySelector("#resultSkillsJS");
-    p.innerText = li.length;
-}
-
-function hideSkillsTotalJS() {
-    const p = document.querySelector("#resultSkillsJS");
-    p.innerText = "";
+function adviceSubmission() {
+    const review = document.getElementById("adviceText")
+    const adviceThanks = document.getElementById("feedbackThanks")
+    //something in here eventually to submit feedback to a DB maybe?
+    review.value=""
+    adviceThanks.innerHTML = "Thank you for your feedback!"
 }

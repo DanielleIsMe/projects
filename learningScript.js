@@ -510,3 +510,6 @@ function displayItems() {
 
 //querySelectorAll() allows us to select all elements and not just one like querySelector()
 
+//With buttons, programs change webpages based on user behavior. For example, 
+// clicking Next can run code that cycles through characters.
+

@@ -27,6 +27,9 @@
     <!--Interactive webpages often use buttons to react to clicks from visitors. 
     However, without more information, a button tag is useless. To react to clicks 
     from visitors, a button tag needs the onclick attribute.-->
+
+    <!--To create a button users can click on, we need the opening 
+    <button> and closing </button> tags.-->
     <button onmouseover="show()" onmouseleave="hide()" id="secretK">Secret Knowledge</button> 
     <p id="secret"></p>
     <!-- the h1 element is a heading element that is used to define the heading on the page. 6 different headings
@@ -65,11 +68,7 @@
                 <li class="skillsHTML">forms </li>
                 <li class="skillsHTML">tables</li>
                 <li class="skillsHTML">Empty Elements (img, br, doctype)</li>
-            </ul>
-            <button class="skillsButton" onmousedown="showSkillsTotalHTML()" onmouseup="hideSkillsTotalHTML()">
-                    Display number of skills learned
-                </button>
-            <p class="resultSkills" id="resultSkillsHTML"></p>
+            </ul>          
 
             <p class="skillSection">CSS</p>
             <ul class="skills">
@@ -85,10 +84,6 @@
                 <li class="skillsCSS">shorthand properties</li>
                 <li class="skillsCSS">link displays</li>
             </ul>
-            <button class="skillsButton" onmousedown="showSkillsTotalCSS()" onmouseup="hideSkillsTotalCSS()">
-                Display number of skills learned
-            </button>
-        <p class="resultSkills" id="resultSkillsCSS"></p>
 
             <p class="skillSection">JavaScript</p>
             <ul class="skills">
@@ -106,15 +101,20 @@
                 <li class="skillsJS">collections[]</li>
                 <li class="skillsJS">querySelectorAll()</li>
             </ul>
-            <button class="skillsButton" onmousedown="showSkillsTotalJS()" onmouseup="hideSkillsTotalJS()">
+            <button class="skillsButton" onmousedown="showSkillsTotal()" onmouseup="hideSkillsTotal()">
                 Display number of skills learned
             </button>
-        <p class="resultSkills" id="resultSkillsJS"></p>
+        <p class="resultSkills" id="resultSkillsTotal"></p>
 
         </ul>
         </p>
     <h2>Miles to Kilometer Converter</h2>
         <p>This converter is an exercise in logical functions using JavaScript.<br><br></p>
+        <!--In HTML, we use the input element to get all kinds of user input like 
+        emails, passwords, dates, and more.-->
+        <!--The placeholder attribute hints at what a user should type into the field.-->
+        <!--The type attribute specifies the type of input. For example, 
+        we can hide what users type for better security with type="password".-->
         <input type="number" id="input" placeholder="Please type a number" required>
         <select id="unitSelect" type="text">
             <option value="milesToKm">Miles to Kilometers</option>
@@ -124,6 +124,17 @@
         <button onclick="clearString()">Clear!</button>
         <p id="result"></p>
 
+    <h2>Feedback</h2>
+        <p>This is a textarea element that I am planning to use to gather feedback from site 
+        visitors</p><br>
+        <p>Please leave some feedback / advice below. any guidance along my 
+        learning journey is appreciated! NOTE: This is currently an 
+        empty shell and does not store any data!!!</p>
+        <!--the textarea element works similarly to input-->
+        <textarea id="adviceText" rows="5" placeholder="Please write your feedback here"></textarea>
+        <p id="feedbackThanks"></p>
+        <br>
+        <button id="feedbackSubmit" onclick="adviceSubmission()">Submit Feedback</button>
     <!--The <script> tag in HTML is used to embed or reference executable JavaScript code within 
         an HTML document.-->
     <!--The src attribute specifies the URL of an external script file. 

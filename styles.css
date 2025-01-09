@@ -133,3 +133,18 @@ input {
 .skillsButton {
     margin: 5px 150px 5px 100px;
 }
+
+#adviceText {
+    margin: 0 0 20px 0;
+    border: solid 5px rgb(224, 170, 220);
+    border-radius: 5px;
+    background-color: rgb(224, 170, 220);
+    color: rgb(110, 0, 101);
+    margin: 10px 0 0 20px;
+    min-width: 600px;
+    display: block;
+}
+
+#feedbackSubmit {
+    margin: 0 0 0 20px;
+}
