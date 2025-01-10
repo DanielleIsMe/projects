@@ -55,7 +55,7 @@ a {
     border: solid 1px rgb(168, 206, 216);
     border-radius: 50px;
     margin: 5px 30px 5px 30px;
-    padding: 3px 0 3px 0;
+    padding: 3px 3px 3px 3px;
 }
 /*We are using the ID attribute from our img tag for our 
 selector in the below line of code*/
