@@ -63,6 +63,7 @@
         padding: 3px 0 3px 0;
         color: rgb(110, 0, 101);
         margin: 3px;
+        font-weight: bold;
     }
     .result {
         color: rgb(110, 0, 101);
