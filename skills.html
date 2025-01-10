@@ -15,55 +15,88 @@
 
             <p class="skillSection">HTML</p>
             <ul class="skills">
-                <li class="skillsHTML">attributes (href, img, rel, height, width)</li>
-                <li class="skillsHTML">IDs</li>
-                <li class="skillsHTML">classes</li>
-                <li class="skillsHTML">headings</li>
-                <li class="skillsHTML">paragraphs</li>
-                <li class="skillsHTML">lists</li>
-                <li class="skillsHTML">links</li>
-                <li class="skillsHTML">images</li>
-                <li class="skillsHTML">buttons</li>
-                <li class="skillsHTML">forms </li>
-                <li class="skillsHTML">tables</li>
-                <li class="skillsHTML">inputs</li>
-                <li class="skillsHTML">Empty Elements (img, br, doctype)</li>
-                <li class="skillsHTML">div</li>
-                <li class="skillsHTML">unordered lists</li>
-                <li class="skillsHTML">ordered lists</li>
-                <li class="skillsHTML">textarea</li>
+                <!--List items can contain more than just text. They can also contain images or link elements-->
+                <!--List items can even contain other lists.-->
+                <li>attributes (href, img, rel, height, width)</li>
+                <!--Sometimes we want to style only a small part of a webpage, like just a few words. 
+                Let's learn how to do that by using the <span> tag.-->
+                <!--The <span> element is used for applying styles to parts of text.-->
+                    <!--we can also set clases or an ID to span tags.-->
+                <li><span id="exampleSpan" class="exampleSpanClass">IDs</span></li>
+                <li>classes</li>
+                <li>headings</li>
+                <li>paragraphs</li>
+                <li>lists</li>
+                <li>links</li>
+                <li>images</li>
+                <li>buttons</li>
+                <li>forms </li>
+                <li>tables</li>
+                <li>inputs</li>
+                <li>Empty Elements (img, br, doctype)</li>
+                <li>div</li>
+                <li>unordered lists</li>
+                <li>ordered lists</li>
+                <li>textarea</li>
             </ul>          
 
             <p class="skillSection">CSS</p>
-            <ol class="skills">
-                <li class="skillsCSS">selectors</li>
-                <li class="skillsCSS">borders</li>
-                <li class="skillsCSS">margins</li>
-                <li class="skillsCSS">padding</li>
-                <li class="skillsCSS">alignment</li>
-                <li class="skillsCSS">classes</li>
-                <li class="skillsCSS">IDs</li>
-                <li class="skillsCSS">font</li>
-                <li class="skillsCSS">colors</li>
-                <li class="skillsCSS">shorthand properties</li>
-                <li class="skillsCSS">link displays</li>
-            </ol>
+            <ul class="skills">
+                <li>selectors</li>
+                <li>borders</li>
+                <li>margins</li>
+                <li>padding</li>
+                <li>alignment</li>
+                <li>classes</li>
+                <li>IDs</li>
+                <li>font</li>
+                <li>colors</li>
+                <li>shorthand properties</li>
+                <li>link displays</li>
+            </ul>
 
             <p class="skillSection">JavaScript</p>
             <ul class="skills">
-                <li class="skillsJS">functions</li>
-                <li class="skillsJS">variables</li>
-                <li class="skillsJS">operators</li>
-                <li class="skillsJS">comparisons </li>
-                <li class="skillsJS">logical expressions</li>
-                <li class="skillsJS">if/else statements</li>
-                <li class="skillsJS">console.log()</li>
-                <li class="skillsJS">getElementById()</li>
-                <li class="skillsJS">querySelector()</li>
-                <li class="skillsJS">getElementsByTagName()</li>
-                <li class="skillsJS">getElementsByClassName()</li>
-                <li class="skillsJS">collections[]</li>
-                <li class="skillsJS">querySelectorAll()</li>
+                <li>functions</li>
+                <!--List items can even contain other lists.-->
+                <li>variables</li>
+                    <ol>
+                        <li>let</li>
+                        <li>const</li>
+                    </ol>
+                <li>operators</li>
+                    <ol>
+                        <li>""==="</li>
+                        <li>"!=="</li>
+                        <li>"||"</li>
+                        <li>"&&"</li>
+                        <li>"">"</li>
+                        <li>"<"</li>
+                    </ol>
+                <li>logical expressions</li>
+                    <ol>
+                        <li>if/else statements</li>
+                    </ol>
+                <li>console.log()</li>
+                <li>getElement</li>
+                    <ol>
+                        <li>getElementById()</li>
+                        <li>getElementsByTagName()</li>
+                        <li>getElementsByClassName()</li>
+                    </ol>
+                <li>querySelector()</li>
+                    <ol>
+                        <li>querySelectorAll()</li>
+                    </ol>
+                <li>getAttribute()</li>
+                <li>setAttribute()</li>
+                <li>collections[]</li>
+                <li>classList</li>
+                    <ol>
+                        <li>classList.add</li>
+                        <li>classList.remove</li>
+                        <li>classList.toggle</li>
+                    </ol>
             </ul>
             <center><button class="skillsButton" onmousedown="showSkillsTotal()" onmouseup="hideSkillsTotal()">
                 Display number of skills learned
