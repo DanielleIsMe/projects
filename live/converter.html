@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Miles to Kilometers Converter</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div>
+            <a href="index.html">Return Home</a>
+        </div>
+        <div>
+            <h2>Miles to Kilometer Converter</h2>
+                <p>This converter is an exercise in logical functions using JavaScript.<br><br></p>
+                <input type="number" id="input" placeholder="Please type a number" required>
+                <select id="unitSelect" type="text">
+                    <option disabled selected value="0">Please select a conversion</option>
+                    <option value="1">Miles to Kilometers</option>
+                    <option value="2">Kilometers to Miles</option>
+                </select>
+                <button onclick="convert()">Convert!</button>
+                <button onclick="clearString()">Clear!</button>
+                <p id="result" class="result"></p>
+        </div>
+    <script src="scripts/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,152 @@
+/*PARENTS*/
+    html{
+        height: auto;
+        margin: auto;
+        max-width: 700px;
+        background-color: rgb(68, 38, 66);
+    }
+
+    body {
+        background-color: rgb(254, 213, 255);
+        border: solid 5px rgb(110, 0, 101);
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        display: table-cell;
+        vertical-align: middle;
+        color: rgb(110, 0, 101);
+    }
+
+    div {
+        display: block;
+        background-color: rgba(148, 42, 148, 0.082);
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+
+
+/*FILLABLES, INTERACTABLES*/
+    input, select {
+        margin: 0 0 20px 0;
+        border: solid 5px rgb(224, 170, 220);
+        border-radius: 10px;
+        background-color: rgb(224, 170, 220);
+        color: rgb(110, 0, 101);
+    }
+
+    textarea {
+        margin: 0 0 20px 0;
+        border: solid 5px rgb(224, 170, 220);
+        border-radius: 10px;
+        background-color: rgb(224, 170, 220);
+        color: rgb(110, 0, 101);
+        width: 75%;
+        max-width: 500px;
+    }
+
+    button {
+        margin: 3px;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: rgba(167, 90, 212, 0.575);
+        color: rgb(110, 0, 101);
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+    }
+    a {
+        display: block;
+        text-align: center;
+        border-radius: 10px;
+        background-color: rgba(167, 90, 212, 0.575);
+        padding: 3px 0 3px 0;
+        color: rgb(110, 0, 101);
+        margin: 3px;
+    }
+    .result {
+        color: rgb(110, 0, 101);
+        margin: 0 70px 0 70px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        border: solid 5px rgb(221, 170, 220);
+        border-radius: 50px;
+        background-color: rgb(224, 170, 220);
+        padding: 3px 0 3px 0;
+        height: 18px;
+    }
+
+
+
+
+/*TEXT*/
+    h1 {
+        text-align: left;
+        padding: 3px 0 3px 0
+    }
+    h2 {
+        text-align: center;
+        border-radius: 25px;
+        padding: 3px 0 3px 0
+    }
+    p {
+        margin: 0 10px 5px 10px;
+        border-radius: 10px;
+        color: rgb(110, 0, 101);
+        padding: 5px;
+    }
+    ul {
+        columns: 2;
+        margin: 20px 0 20px 0;
+    }
+    li {
+        margin: 0 3px 3px 3px;
+    }
+
+
+
+/*SOURCES*/
+    img {
+        width: auto;
+        height : auto;
+        max-height: 75%;
+        max-width: 75%;
+        border-radius: 10px;
+    }
+
+
+
+/*GRID MAPPING*/
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: (3, 1fr);
+        grid-template-rows: (3, 1fr);
+        padding: 5px;
+        height: auto;
+    }
+    .one {
+        grid-column: 1;
+        grid-row: 1;
+        margin: 5px;
+        height: auto;
+    }
+    .two {
+        grid-column: 2;
+        grid-row: 1;
+        margin: 5px;
+        height: auto;
+    }
+    .three {
+        grid-column: 3;
+        grid-row: 1;
+        margin: 5px;
+        height: auto;
+    }
+    .twoThree {
+        grid-column: 2 / span 3;
+        grid-row: 1;
+        margin: 5px;
+        height: auto;
+    }

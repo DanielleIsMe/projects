@@ -1,9 +1,7 @@
 /*Selectors are used to select the HTML elements you want to style. you can modify multiple elements
 by putting a comma between each element*/
-html, body {
+html{
     height: auto;
-}
-html {
     display: table;
     margin: auto;
     max-width: 700px;
@@ -78,14 +76,11 @@ button {
     margin: 0 0 0 10px;
 }
 input, select {
-    margin: 0 0 20px 0;
+    margin: 0 0 20px 20px;
     border: solid 5px rgb(224, 170, 220);
     border-radius: 50px;
     background-color: rgb(224, 170, 220);
     color: rgb(110, 0, 101);
-}
-input {
-    margin: 0 0 0 20px
 }
 #result {
     color: rgb(110, 0, 101);
@@ -155,7 +150,8 @@ input {
     defining the relationship in terms of size, position, and layer, between parts 
     of a control built from HTML primitives.*/
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     gap: 10px;
 }
 .one {

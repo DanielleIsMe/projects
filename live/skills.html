@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Skills</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="purple-text">
+        <div>
+            <a href="index.html">Return Home</a>
+        </div>
+        <div>
+        <h2>Skills I Have Learnt</h2>
+        <p>
+        <!--the ul element displays nested LI elements as a unordered list with dot points-->
+        <!--the ol element displays nested LI elements as a ordered list.  this ensures that
+        each item is displayed in a numerical order-->
+        </div>
+        <div>
+            <h2 class="skillSection">HTML</h2>
+            <ul class="skills">
+                <!--List items can contain more than just text. They can also contain images or link elements-->
+                <!--List items can even contain other lists.-->
+                <li>attributes (href, img, rel, height, width)</li>
+                <!--Sometimes we want to style only a small part of a webpage, like just a few words. 
+                Let's learn how to do that by using the <span> tag.-->
+                <!--The <span> element is used for applying styles to parts of text.-->
+                    <!--we can also set clases or an ID to span tags.-->
+                <li>IDs</li>
+                <li>classes</li>
+                <li>headings</li>
+                <li>paragraphs</li>
+                <li>lists</li>
+                <li>links</li>
+                <li>images</li>
+                <li>buttons</li>
+                <li>forms </li>
+                <li>tables</li>
+                <li>inputs</li>
+                <li>Empty Elements (img, br, doctype)</li>
+                <li>div</li>
+                <li>unordered lists</li>
+                <li>ordered lists</li>
+                <li>textarea</li>
+            </ul>
+        </div>
+        <div>   
+            <h2 class="skillSection">CSS</h2>
+            <ul class="skills">
+                <li>selectors</li>
+                <li>borders</li>
+                <li>margins</li>
+                <li>padding</li>
+                <li>alignment</li>
+                <li>classes</li>
+                <li>IDs</li>
+                <li>font</li>
+                <li>colors</li>
+                <li>shorthand properties</li>
+                <li>link displays</li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="skillSection">JavaScript</h2>
+            <ul class="skills">
+                <li>functions</li>
+                <!--List items can even contain other lists.-->
+                <li>variables</li>
+                    <ol>
+                        <li>let</li>
+                        <li>const</li>
+                    </ol>
+                <li>operators</li>
+                    <ol>
+                        <li>""==="</li>
+                        <li>"!=="</li>
+                        <li>"||"</li>
+                        <li>"&&"</li>
+                        <li>"">"</li>
+                        <li>"<"</li>
+                    </ol>
+                <li>logical expressions</li>
+                    <ol>
+                        <li>if/else statements</li>
+                    </ol>
+                <li>console.log()</li>
+                <li>getElement</li>
+                    <ol>
+                        <li>getElementById()</li>
+                        <li>getElementsByTagName()</li>
+                        <li>getElementsByClassName()</li>
+                    </ol>
+                <li>querySelector()</li>
+                    <ol>
+                        <li>querySelectorAll()</li>
+                    </ol>
+                <li>getAttribute()</li>
+                <li>setAttribute()</li>
+                <li>collections[]</li>
+                <li>classList</li>
+                    <ol>
+                        <li>classList.add</li>
+                        <li>classList.remove</li>
+                        <li>classList.toggle</li>
+                    </ol>
+            </ul>
+        </div>
+        <div>
+            <center><button onmousedown="showSkillsTotal()" onmouseup="hideSkillsTotal()">
+                Display number of skills learned
+            </button>
+        <p class="result" id="resultSkillsTotal"></p>
+            </center>
+        </p>
+    </div>
+        <script src="scripts/script.js"></script>
+        </body>
+    </html>
