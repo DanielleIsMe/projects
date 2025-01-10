@@ -187,10 +187,11 @@ span {
 li {
     padding: 2px 0 0 0;
 }
-
+/*When a child element receives a property from its parent, we call this inheritance.*/
+/*only certain properties are inherited from the parent element.  for example, a border is not inherited.*/
 .groupingExample {
     background-color: rgba(148, 42, 148, 0.082);
     border-radius: 25px;
     padding: 1px 50px 25px 50px;
-    margin: 5px 50px 10px 50px;
+    margin: 5px 25px 10px 25px;
 }
