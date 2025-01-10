@@ -30,7 +30,7 @@ h1, h2 {
     /*we can change the alignment of the text by using text-align*/
     text-align: center;
     border: solid 5px rgb(224, 170, 220);
-    border-radius: 50px;
+    border-radius: 25px;
     background-color: rgb(224, 170, 220);
     padding: 3px 0 3px 0
 }
@@ -188,3 +188,9 @@ li {
     padding: 2px 0 0 0;
 }
 
+.groupingExample {
+    background-color: rgba(148, 42, 148, 0.082);
+    border-radius: 25px;
+    padding: 1px 50px 25px 50px;
+    margin: 5px 50px 10px 50px;
+}
