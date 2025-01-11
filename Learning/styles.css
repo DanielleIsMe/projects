@@ -77,6 +77,10 @@ button {
     border-radius: 50px;
     margin: 0 0 0 10px;
 }
+/*instead of writing a new rule in CSS to style different elements the same way, we can additional selectors seperated by a comma.
+this way, all input elements and all select elements will have the same styling applied.
+when we do this, it is called a "grouping selector,"  because we are grouping elements under the same rule.*/
+/*we can group selectors of any type*/
 input, select {
     margin: 0 0 20px 20px;
     border: solid 5px rgb(224, 170, 220);
@@ -192,4 +196,14 @@ li {
     border-radius: 25px;
     padding: 1px 50px 25px 50px;
     margin: 5px 25px 10px 25px;
+}
+
+.bold {
+    font-weight: bold;
+}
+.italic {
+    font-style: italic;
+}
+.color {
+    color: purple;
 }
