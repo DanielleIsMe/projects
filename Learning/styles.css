@@ -62,7 +62,9 @@ selector in the below line of code*/
     /*we can also use shorthand to change the border radius for specific directions starting from
     top-left and going clockwise*/
     border-radius: 10px 100px 10px 100px;
-    height: 200px;
+    /*We can size an element relative to its 
+    parent using a percentage. Here, 100% means the image takes up 100% of the width of the body element.*/
+    height: 75%;
 }
 button {
     color: rgb(0, 82, 102);

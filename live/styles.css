@@ -34,7 +34,6 @@
         background-color: rgb(224, 170, 220);
         color: rgb(110, 0, 101);
     }
-
     textarea {
         margin: 0 0 20px 0;
         border: solid 5px rgb(224, 170, 220);
@@ -44,7 +43,6 @@
         width: 75%;
         max-width: 500px;
     }
-
     button {
         margin: 3px;
         padding: 5px;
@@ -124,7 +122,6 @@
         display: grid;
         grid-template-columns: (3, 1fr);
         grid-template-rows: (3, 1fr);
-        padding: 5px;
         height: auto;
     }
     .one {
