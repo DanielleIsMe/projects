@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Image Floating Example</title>
+    </head>
+    <body>
+        <div>
+            <a href="index.html">Return Home</a>
+        </div>
+        <div>
+            <h2>Floating Images on a webpage</h2>
+        </div>
+        <div>
+            <img src="images/cssFloatExample.jpg" class="paragraphImgRight">
+            <p>It's possible to wrap text around images on a webpage using 
+                the float property in CSS! to wrap text around an image, we 
+                first place an element with text below the image element, then 
+                in our stylesheet we set the float property to left or right.</p>
+                <img src="images/cssClearExample.jpg" class="paragraphImgLeft">
+            <p>If we want to have a second element below the first, but we dont want 
+                it to wrap, then we can use the clear property to remove the float 
+                from the second element</p>
+            <p class="second">Adding the clear property to a text element stops it from wrapping around the 
+                floated image.  Subsequent text elements will also be affected by this.</p>
+                <img src="images/htmlFloatExample.jpg" class="exampleImg">
+        </div>
+    </div>
+    <script href="scripts/script.js"></script>
+    </body>
+</html>

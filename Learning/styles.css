@@ -207,3 +207,36 @@ li {
 .color {
     color: purple;
 }
+
+/*Normal flow is the way elements display on a webpage by default.
+For example, headings and paragraphs appear on their own line while links and buttons get grouped on the same line.*/
+/*The display property decides whether or not an element appears on the same line.*/
+.a {
+    /*For a elements, the default value of the display property is inline.*/
+    display: inline;
+    /*height and width don't work on inline elements. Instead, they keep the size of the content inside them.*/
+    width: 5000px;
+    /*Examples of inline elements include a, em and strong. They all appear on the same line when coded after each other.*/
+    /*If multiple inline elements don't fit inside the width of their parent, the elements towards the end move down to the next line.*/
+}
+
+/*Elements like p, div, or h3 work differently in normal flow than inline elements. They always appear on separate lines.*/
+/*The display value for elements taking the entire width of their parent element is block.*/
+.p {
+    display: block;
+    /*Since they take up the full width of their parent, block elements always start on a new line.*/
+
+}
+
+/*Elements like button and img have inline-block as their default display value.*/
+.button .img {
+    display: inline-block;
+    /*inline-block puts elements on the same line, while also letting us change their size.*/
+    height: 50px;
+    width: 150px;
+}
+
+/*We can set an element's display property to a different value when we want to change how they look and behave on a webpage.*/
+.a {
+    display: inline-block;
+}
