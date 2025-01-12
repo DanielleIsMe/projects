@@ -634,3 +634,21 @@ function addBold() {
     el.classList.add("bold", "underline");
 }
 
+//A library stores book and allows us to borrow them to use ourselves. this concept also exists in JavaScript! we can borrow code written by other people to use in our own projects, and we can also contribute with our own code for others to use.
+//other coders may feel that the code they write can help others. JavaScript libraries contain code for public use.
+//Libraries are usually stored in Content Delivery Network (CDN) . CDN is a network that delivers web content quickly by serving it from a nearby server.
+//SEE SCRIPT ELEMENT IN index.html FOR CONT.
+//Libraries help us save time by using a solution that has already been written by other coders.
+
+//With libraries, we can use the solution that someone else coded to solve a problem we're encountering.
+//Each library is different. When we use a library, we have to check the documentation to know how to use the functions it provides.
+
+//To use code from libraries, we need to find the function from the documentation and use it where we need it.
+//in the below example, "conversion" is the name of the library and ".kgToLb(50)" is the name of the function with the desired value in parentheses.
+
+conversion.kgToLb(50)
+
+//Another benefit of libraries is that problems are usually quickly fixed by their users.  for example, if the above value was a string, someone may have already thought about that case and provided a fix.
+
+//always check the documentation of a library to see what kinds of functions are available in a CDN library.
+
