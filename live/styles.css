@@ -105,6 +105,15 @@
         clear: left;
     }
 
+    .relativeExample {
+        position: relative;
+    }
+
+    .raise {
+        position: relative;
+        bottom: 10px;
+    }
+
 
 
 /*SOURCES*/
