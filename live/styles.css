@@ -114,6 +114,17 @@
         bottom: 10px;
     }
 
+    .absoluteExample {
+        position: absolute;
+        left: 0px;
+    }
+
+    .zIndexExample {
+        position:absolute;
+        left: 250px;
+        z-index: 1;
+    }
+
 
 
 /*SOURCES*/

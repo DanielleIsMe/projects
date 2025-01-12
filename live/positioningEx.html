@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Relative Positioning</title>
+    </head>
+    <body>
+        <div>
+            <a href="index.html">Return Home</a>
+        </div>
+        <div>
+            <h2>Relative Positioning</h2>
+        </div>
+        <div>
+            <img src="images/cssRelativeExample.jpg" class="paragraphImgRight">
+            <p>It's possible to position an element on a webpage relative to it's original position.
+                We can change the position of an element using the "position" property. when we set the elements position
+                to relative, we change an elements position in relation to it's <strong class="relativeExample">Original</strong> position using 
+                normal flow!</p>
+            <img src="images/cssRelativeRaiseExample.jpg" class="paragraphImgRight">
+            <p>We can <strong class="raise">raise</strong> the element 10px up from it's original position by using the bottom property.
+            We can also move an element in this way by using the top, right and left properties after defining it's position!</p>
+            <p class="second"> coding left means we push the element away from the left of it's relative position, right from the right, top from
+                the top and bottom from the bottom.
+            </p>
+            <p>See the gap where "raise" used to be? relative position doesn't change normal flow, so other elements act like it's still there!
+            </p>
+        </div>
+        <div>
+            <h2>Absolute Positioning</h2>
+        </div>
+        <div>
+            <img src="images/cssAbsoluteExample.jpg" class="paragraphImgRight">
+            <p>We can also position elements based on the edges of a webpage using the position property. To place an element on a specific spot 
+            on the screen, we start by setting it's position property to "absolute."</p>
+            <p>If we want to put an image on the left of the webpage, we use left: 0px;. this means that the image will be 0px away from the left
+            of the webpage no matter what. Just like relative positioning we can use top, bottom, right and left, to instead position an element 
+            an exact distance away from the edge of the webpage.</p>
+            <p>Setting an element's position to absolute removes it from the Normal Flow, which can cause it to overlap other elements on a webpage.  Luckily for us, there is a way to control overlapping elements: a property called z-index.</p>
+            <p>Z-index controls how far into the foreground or background an element is. by default, all elements on a webpage have the default z-index value of 0.  To place an element in front of another, we set the z-index to a higher number like 1.  any whole number works</p>
+            <p>Elements with a higher z-index number are always in front.</p>
+        </div>
+            <img src="images/cssAbsoluteExampleImg.jpg" class="absoluteExample">
+            <img src="images/zIndexExample.jpg" class="zIndexExample">
+    <script href="scripts/script.js"></script>
+    </body>
+</html>
