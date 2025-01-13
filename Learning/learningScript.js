@@ -646,9 +646,82 @@ function addBold() {
 //To use code from libraries, we need to find the function from the documentation and use it where we need it.
 //in the below example, "conversion" is the name of the library and ".kgToLb(50)" is the name of the function with the desired value in parentheses.
 
-conversion.kgToLb(50)
+conversion.kgToLb(50);
 
 //Another benefit of libraries is that problems are usually quickly fixed by their users.  for example, if the above value was a string, someone may have already thought about that case and provided a fix.
 
 //always check the documentation of a library to see what kinds of functions are available in a CDN library.
 
+//when we create a variable, we ASSIGN it a value, like assigning 3 to the wallet variable below.
+
+let wallet = 3;
+//self-assignment is when set a variable to it's own value. for example, setting wallet to wallet.
+wallet = wallet;
+//since we can self assign variables, we can increase or decrease variables set to numbers like below
+wallet = wallet + 1;
+console.log(wallet);
+//this console log will read out the value 4.
+//self-assigning variable lets us track data that changes over time. for example, a user might add 1 to a wallet, and then subtract 2 later.  this is an extremely powerful function.
+wallet = wallet - 2;
+console.log(wallet);
+//this log will read out as 2
+
+//variables set to strings work the same way, like below
+
+let login = "Account Name: ";
+login = login + "Elton ";
+login = login + "john";
+console.log(login);
+//this console log will read out as "Account Name: Elton John"
+
+//rather than rewriting the variable name again in our code, we can use the add += operator to add a number.
+wallet += 1;
+console.log(login);
+//the console log should read 3
+
+//to subtract from a variables value, we use the subtract -= operator.
+
+wallet -= 1;
+console.log(wallet);
+//the console log should read 2 again.
+
+//the increment operator ++, when placed after a variables name, should increase its value by one.
+
+wallet ++
+console.log(wallet);
+//console log will read 3.
+
+//we can SUBTRACT one from a value using the decrement operator, --
+
+wallet --;
+console.log(wallet);
+//console should read 2
+
+//programs repeat the same lines of code over and over again to build all kinds of things.
+//one way for us to repeat lines of code is to write them multiple times.
+console.log(wallet);
+console.log(wallet);
+console.log(wallet);
+console.log(wallet);
+console.log(wallet);
+//obviously, this isnt ideal and can take a very long time with larger programs.
+
+//to build large programs and sites, we can repeat lines of code by instead using a While Loop.
+while (true) {
+    console.log(wallet);
+}
+//this expression will repeat the wallet variable in the console for as long as the specified value is true.
+//if a While Loops condition stays true forever, it is called an infinite loop, because it will loop forever.
+//since we cant show infinite messages in the console using the above, it will crash our program.
+
+//in order to stop a while loop from repeating forever, we can start by declaring a variable
+
+let keepGoing = true;
+//we use the variable in the condition to determine whether the while loop should run its code.
+while (keepGoing === true) {
+    console.log(keepGoing);
+    //inside the code block, we can set the keepGoing variable to false so that the condition returns false.
+    keepGoing = false;
+    console.log(keepGoing);
+    //the loop runs its entire code block because the keepGoing variable is true at first, but doesnt run it a second time because we set it to false
+}
