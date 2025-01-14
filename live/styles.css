@@ -5,7 +5,6 @@
         max-width: 700px;
         background-color: #5e548e;
     }
-
     body {
         background-color: #9f86c0;
         border: solid 5px #9f86c0;
@@ -15,17 +14,12 @@
         vertical-align: middle;
         color: #231942;
     }
-
     div {
-        display: block;
         background-color: #be95c4;
         padding: 5px;
         border-radius: 10px;
         margin: 10px;
     }
-
-
-
 /*FILLABLES, INTERACTABLES*/
     input, select {
         margin: 0 0 20px 0;
@@ -74,10 +68,6 @@
         padding: 3px 0 3px 0;
         height: 18px;
     }
-
-
-
-
 /*TEXT*/
     h1 {
         text-align: left;
@@ -97,46 +87,15 @@
         columns: 2;
         margin: 20px 0 20px 0;
     }
-    li {
-        margin: 0 3px 3px 3px;
-    }
-
-    .second {
-        clear: left;
-    }
-
-    .relativeExample {
-        position: relative;
-    }
-
     .raise {
         position: relative;
         bottom: 10px;
     }
-
-    .absoluteExample {
-        position: absolute;
-        left: 0px;
-    }
-
-    .zIndexExample {
-        position:absolute;
-        left: 250px;
-        z-index: 1;
-    }
-
-
-
 /*SOURCES*/
     img {
         width: 100%;
         border-radius: 10px;
         padding: 5px;
-    }
-
-    .exampleImg {
-        display: block;
-        margin: auto;
     }
 
     .paragraphImgRight {
@@ -149,18 +108,15 @@
         width: 30%;
     }
 
-    .absoluteExample {
-        width: 50%;
-    }
-
     .profileImg {
         width: 50%;
     }
-
-
-
 /*FLEX BOX*/
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
 
-.container {
-    display: flex;
-}
+    .item {
+
+    }

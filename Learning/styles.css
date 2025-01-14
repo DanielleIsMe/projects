@@ -254,3 +254,7 @@ With flexbox, elements adapt in size to fit perfectly on different screens. Pres
 .container {
     display: flex;
 }
+
+/*elements inside of the flex container will automatically resize to fit the parent container*/
+/*By default, flexbox tries to fit items inside a container on only one row.*/
+
