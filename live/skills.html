@@ -5,16 +5,17 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div>
+    <div class="container">
+        <div class="item">
             <a href="index.html">Return Home</a>
         </div>
-        <div>
+        <div class="item">
         <h2>Skills I Have Learnt</h2>
         <!--the ul element displays nested LI elements as a unordered list with dot points-->
         <!--the ol element displays nested LI elements as a ordered list.  this ensures that
         each item is displayed in a numerical order-->
         </div>
-        <div>
+        <div class="item">
             <h2 class="skillSection">HTML</h2>
             <ul class="skills">
                 <!--List items can contain more than just text. They can also contain images or link elements-->
@@ -44,7 +45,7 @@
                 <li>Combining multiple classes</li>
             </ul>
         </div>
-        <div>   
+        <div class="item">   
             <h2 class="skillSection">CSS</h2>
             <ul class="skills">
                 <li>selectors</li>
@@ -65,7 +66,7 @@
                 <li>Floating images</li>
             </ul>
         </div>
-        <div>
+        <div class="item">
             <h2 class="skillSection">JavaScript</h2>
             <ul class="skills">
                 <li>functions</li>
@@ -123,13 +124,14 @@
                     </ol>
             </ul>
         </div>
-        <div>
+        <div class="item">
             <center><button onmousedown="showSkillsTotal()" onmouseup="hideSkillsTotal()">
                 Display number of skills learned
             </button>
         <p class="result" id="resultSkillsTotal"></p>
             </center>
         </p>
+        </div>
     </div>
         <script src="scripts/script.js"></script>
         </body>

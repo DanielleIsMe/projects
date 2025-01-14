@@ -5,18 +5,20 @@
         <title>Guessing Game</title>
     </head>
     <body>
-        <div>
+    <div class="container">
+        <div class="item">
             <a href="index.html">Return Home</a>
         </div>
-        <div>
+        <div class="item">
             <h2>Guess a Number!</h2>
             <p>Guess a number between 1 and 100! You have 10 attempts to guess the correct number and win absolutely nothing!</p>
             <p>This page showcases the use of while loops and if statements, as well as the decrement function, parseInt and break statements. I used all of these statements, operators and expressions to build the below guessing game.</p>
-            <center><input type="number" id="input"></center>
-            <center><button onclick="guess()">Submit Guess</button></center>
-            <center><p id="feedback"></p></center>
+            <input type="number" id="input">
+            <button onclick="guess()">Submit Guess</button>
+            <p id="feedback"></p>
             <img src="images/guessingGameImg.jpg" class="">
         </div>
+    </div>
         <script src="scripts/guessingGame.js"></script>
     </body>
 </html>

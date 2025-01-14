@@ -240,3 +240,17 @@ For example, headings and paragraphs appear on their own line while links and bu
 .a {
     display: inline-block;
 }
+
+/*We can use a newer feature of CSS called Flex Box to create more responsive web pages.*/
+
+/*Flexbox gives developers a lot of flexibility they never had before. It's an essential skill that lets you do more with less code.
+With flexbox, elements adapt in size to fit perfectly on different screens. Press the button to see.*/
+
+/*To apply flexbox, we first have to make sure the webpage has a parent element with nested child elements inside. since our website makes use of the div element, this is already the case.*/
+/*the parent element of a flex box is called a flex container. elements inside of the flex container are called flex items.*/
+
+/*To apply flexbox to the items inside the container, we add display: flex; to the container.*/
+
+.container {
+    display: flex;
+}

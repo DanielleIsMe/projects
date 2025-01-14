@@ -159,41 +159,8 @@
 
 
 
-/*GRID MAPPING*/
+/*FLEX BOX*/
 
-    .wrapper {
-        display: grid;
-        grid-template-columns: (3, 1fr);
-        grid-template-rows: (3, 1fr);
-        height: auto;
-    }
-    .one {
-        grid-column: 1;
-        grid-row: 1;
-        margin: 5px;
-        height: auto;
-    }
-    .two {
-        grid-column: 2;
-        grid-row: 1;
-        margin: 5px;
-        height: auto;
-    }
-    .three {
-        grid-column: 3;
-        grid-row: 1;
-        margin: 5px;
-        height: auto;
-    }
-    .twoThree {
-        grid-column: 2 / span 3;
-        grid-row: 1;
-        margin: 5px;
-        height: auto;
-    }
-    .oneTwo {
-        grid-column: 1 / span 2;
-        grid-row: 1;
-        margin: 5px;
-        height: auto;
-    }
+.container {
+    display: flex;
+}
