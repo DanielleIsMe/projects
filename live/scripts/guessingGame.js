@@ -1,6 +1,7 @@
 let randomNumber = Math.floor(Math.random() * 100) + 1;
 
 function guess() {
+    //because the inputElement pulling my input id interprets the value as a string, we need to convert it to an integer using parseInt().
     let inputElement = parseInt(document.getElementById("input").value);
     let feedbackElement = document.getElementById("feedback");
 
