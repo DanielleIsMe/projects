@@ -731,3 +731,75 @@ let randomNumber = Math.floor(Math.random() * 100) + 1;
 //Math.floor will round down and return the largest number less than or equal to a given number.  in this case, we use MAth.floor to force the random function to return only a whole number.
 //Math.random generates a random decimal number between 0(inclusive) and 1(exclusive).  we have multiplied this by 100, therefore the function will return a whole number between 0 and 99.
 //adding 1 to this variable shifts the range to include 100.
+
+//It's possible to control the number of times that a while loop can repeat.
+//to do this, we need to start with a variable set to a number.
+
+let counter = 1;
+//then we use a comparison in the while condition to compare the counter variable to a number, like below.
+while (counter < 4) {
+    console.log(counter);
+    //inside the code block, we can make the condition return false and stop the loop by incrementing the counter variable.
+    counter++;
+    //this will increase the counter variable's value by 1, and will stop the loop from running once it reaches 4.
+}
+//changing the condition tewlls the while loop when to stop running it's code.
+while (counter < 10) {
+    console.log(counter);
+    counter++;
+}
+//instead, this loop will run until the counter variable equals 10.
+//changing the counter variable's value here will change when the while loop starts.
+counter = 5
+while (counter < 10) {
+    console.log(counter);
+    counter++;
+}
+//this loop will begin from 5 and stop once it prints 9.
+
+//since the whole block runs while the condition is true, the order we write code affects what the console will display.
+counter = 5
+while (counter < 10) {
+    counter++;
+    console.log(counter);
+}
+//incrementing the counter variable before printing it in the console will cause it to display 6 to 10 instead of 5 to 9.
+
+//we know how to repeat code using a while loop.  using FOR loops instead, we can rewrite the same program to make it easier for other programmers to understand.
+//to create a for loop, we start with the below.
+for () {
+
+}
+//a for loop lets us create a variable inside of the condition.
+for (let counter = 1;) {
+
+}
+//a common name for a counter variable is "i", standing for "index"
+for (let i = 1;) {
+
+}
+//after the semicolon, we can place a condition like i < 5
+for (let i = 1; i < 5;) {
+
+}
+//finally, we can increment the variable using ++
+for (let i = 1; i < 5; i++) {
+    console.log(i)
+}
+//this for loop will print 1 to 4 in the console.
+//for loops are far easier to read because the information for the times the loop repeats is inside the parentheses.
+
+//we previously made a for loop than counts upward from 1 to 4.  we can also make a for loop that counts down from 5 to 1.
+//this is easy. all we need to do is start the variable from a number like 5.
+//then we add the condition, like i > 0.
+//finally, we decrement the number in the iterator instead of incrementing it, with --
+for (let i = 5; i > 0; i--) {
+    console.log(i);
+}
+//this loop will print 5 to 1, stopping when i is no longer greater than 0.
+//if we want to include 0 when counting down, we can use the >= operator instead.
+for (let i = 5; i >= 0; i--) {
+    console.log(i);
+}
+//this loop will print 5 to 0.
+
