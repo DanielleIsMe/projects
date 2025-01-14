@@ -256,5 +256,17 @@ With flexbox, elements adapt in size to fit perfectly on different screens. Pres
 }
 
 /*elements inside of the flex container will automatically resize to fit the parent container*/
-/*By default, flexbox tries to fit items inside a container on only one row.*/
+/*By default, flexbox tries to fit items inside a container on only one row. this is the default setting of flex-direction property called "row"*/
+/*setting the flex-box direction to column organises elements in a column in the order they appear in the html code. elements will stretch to fill the width of the page*/
+/*we can reverse the start points and flow by adding "reverse" to the property*/
+/*The flex-direction defines what's known as the main axis, an imaginary line that refers to the direction and orientation of flex items.*/
 
+
+/*Justifying means changing how elements are grouped and spaced on the main axis. To justify flex items, we use the justify-content property.*/
+
+/*by default, justify-content is set to flex-start*/
+/*flex-start means all of the flex items are grouped together at the beginning of the container.*/
+
+/*To group all items at the end of the container, we use flex-end.*/
+/*justify-content also works when flex-direction is set to column.*/
+/*With flex-direction set to column, flex-end means all the content is grouped at the bottom of the container.*/

@@ -1,6 +1,5 @@
 /*PARENTS*/
     html{
-        height: auto;
         margin: 5px auto auto auto;
         max-width: 700px;
         background-color: #252138;
@@ -86,7 +85,6 @@
     img {
         width: 100%;
         border-radius: 10px;
-        padding: 5px;
     }
 
     .paragraphImgRight {
@@ -100,7 +98,7 @@
     }
 
     .profileImg {
-        width: 50%;
+        width: 35%;
     }
 /*FLEX BOX*/
     .container {
@@ -113,5 +111,5 @@
     }
 
     .item {
-
+        
     }
