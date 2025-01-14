@@ -1,7 +1,7 @@
-let randomNumber = Math.floor(Math.random() * 100);
+let randomNumber = Math.floor(Math.random() * 100) + 1;
 
 function guess() {
-    let inputElement = document.getElementById("input").value;
+    let inputElement = parseFloat(document.getElementById("input").value);
     let feedbackElement = document.getElementById("feedback");
 
     if (inputElement === randomNumber) {
