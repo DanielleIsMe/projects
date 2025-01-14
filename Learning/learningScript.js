@@ -725,3 +725,9 @@ while (keepGoing === true) {
     console.log(keepGoing);
     //the loop runs its entire code block because the keepGoing variable is true at first, but doesnt run it a second time because we set it to false
 }
+
+//the Math operator can be used for a number of things.  in the case below, we are going to use it to generate a random number between 1 and 100.
+let randomNumber = Math.floor(Math.random() * 100) + 1;
+//Math.floor will round down and return the largest number less than or equal to a given number.  in this case, we use MAth.floor to force the random function to return only a whole number.
+//Math.random generates a random decimal number between 0(inclusive) and 1(exclusive).  we have multiplied this by 100, therefore the function will return a whole number between 0 and 99.
+//adding 1 to this variable shifts the range to include 100.
