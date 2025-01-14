@@ -1,17 +1,32 @@
 let randomNumber = Math.floor(Math.random() * 100) + 1;
+let attempts = 10;
 
 function guess() {
-    //because the inputElement pulling my input id interprets the value as a string, we need to convert it to an integer using parseInt().
-    let inputElement = parseInt(document.getElementById("input").value);
-    let feedbackElement = document.getElementById("feedback");
 
-    if (inputElement === randomNumber) {
-        feedbackElement.innerHTML = "Congratulations! You guessed correctly."
-        feedbackElement.style.color = "green"
-    } else if (inputElement < randomNumber) {
-        feedbackElement.innerHTML = "Too low, sorry! Try again."
+const inputElement = document.getElementById("input");
+const feedbackElement = document.getElementById("feedback");
+const guess = parseInt(inputElement.value);
+
+while (attempts > 0) {
+    attempts--;
+    //because the inputElement pulling my input id interprets the value as a string, we need to convert it to an integer using parseInt().
+    if (guess === randomNumber) {
+        feedbackElement.innerHTML = "Congratulations! You guessed correctly.";
+        feedbackElement.style.color = "green";
+        break;
+    } else if (guess < randomNumber) {
+        feedbackElement.innerHTML = "Too low, sorry! You have " + attempts + " tries left.";
+        feedbackElement.style.color = "red";
+        break;
     } else {
-        feedbackElement.innerHTML = "Too high, sorry! Try again"
+        feedbackElement.innerHTML = "Too high, sorry! You have " + attempts + " tries left.";
+        feedbackElement.style.color = "red";
+        break;
     }
-    console.log(randomNumber);
+}
+if (attempts === 0 && guess !== randomNumber) {
+    feedbackElement.innerHTML = "Too bad! the correct answer was " + randomNumber;
+    feedbackElement.style.color = "red";
+}
+
 }
