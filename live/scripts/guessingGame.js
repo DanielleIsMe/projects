@@ -28,5 +28,4 @@ if (attempts === 0 && guess !== randomNumber) {
     feedbackElement.innerHTML = "Too bad! the correct answer was " + randomNumber;
     feedbackElement.style.color = "red";
 }
-
 }
