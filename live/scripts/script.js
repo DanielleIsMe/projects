@@ -77,3 +77,17 @@ function adviceSubmission() {
     review.value=""
     adviceThanks.innerHTML = "Thank you for your feedback!"
 }
+
+//MODALS
+const modal = document.getElementById("modal");
+const modalContent = document.getElementById("modalContent");
+const thumbnail = document.querySelector(".thumbnail");
+
+function showModal() {
+    modal.style.display = "block";
+    modalContent.src = thumbnail.src;
+}
+
+function hideModal() {
+    modal.style.display = "none";
+}

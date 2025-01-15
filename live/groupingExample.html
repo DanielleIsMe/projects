@@ -29,9 +29,13 @@
             an example picture showing the code is below</p><br>
             <p>We can easily make a large chunk of a webpage look good by grouping elements
                 together like this!</p><br>
-            <img class="exampleImg" src="images/htmlExample.jpg"><br>
-            <img class="exampleImg" src="images/cssExample.jpg">
+            <img class="exampleImg thumbnail" src="images/htmlExample.jpg" onclick="showModal(this)"><br>
+            <img class="exampleImg thumbnail" src="images/cssExample.jpg" onclick="showModal(this)">
         </div>
+    </div>
+    <div id="modal">
+        <span id="modalClose" onclick="hideModal()">X</span>
+        <img id="modalContent">
     </div>
         <script href="scripts/script.js"></script>
     </body>

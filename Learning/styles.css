@@ -329,3 +329,11 @@ With flexbox, elements adapt in size to fit perfectly on different screens. Pres
     /*If we set the flex-shrink value to 0, then the item doesn't shrink at all.*/
     flex-shrink: 0;
 }
+
+/*So far we've learned that by default, flex items are set to flex-grow: 0;, flex-shrink: 1; and flex-basis: auto;.*/
+/*Rather than always writing all 3 properties, we can use the flex shorthand.*/
+/*When using flex shorthand, the first value is always flex-grow, followed by flex-shrink, and flex-basis*/
+.item {
+    flex: 0 1 auto;
+    /* this is ordered as: grow, shrink basis.*/
+}
