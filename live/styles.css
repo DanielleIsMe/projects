@@ -1,8 +1,8 @@
 /*PARENTS*/
     html{
-        margin: 5px auto auto auto;
-        max-width: 700px;
+        margin: 0px auto auto auto;
         background-color: #252138;
+        max-width: 700px;
     }
     body {
         background-color: #252138;
@@ -43,7 +43,7 @@
         text-align: center;
         border-radius: 10px;
         background-color: #e0b1cb;
-        padding: 3px 0 3px 0;
+        padding: 5px;
         font-weight: bold;
         color: #231942;
     }
@@ -61,7 +61,8 @@
 /*TEXT*/
     h1 {
         text-align: left;
-        padding: 3px 0 3px 0
+        padding: 3px 0 3px 0;
+        margin: 0 10px 5px 10px;
     }
     h2 {
         text-align: center;
@@ -99,6 +100,8 @@
 
     .profileImg {
         width: 35%;
+        max-width: 200px;
+        margin: 0 10px 5px 10px;
     }
 /*FLEX BOX*/
     .container {
@@ -106,10 +109,22 @@
         flex-direction: column;
         background-color: #be95c4;
         padding: 5px;
-        border-radius: 10px;
-        margin: 10px;
+        border: solid 1px;
+        border-radius: 5px;
     }
 
     .item {
-        
+
+    }
+
+    .dir {
+        display: flex;
+        justify-content: space-between;
+        max-width: 700px;
+    }
+    .dirButton {
+        margin: 1px auto 0 auto;
+        padding: 10px;
+        border-radius: 5px;
+        border: solid 1px;
     }
