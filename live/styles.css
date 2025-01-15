@@ -117,22 +117,36 @@
     }
 
     .profileImg {
-        width: 35%;
+        width: 60%;
         max-width: 200px;
         margin: 0 10px 5px 10px;
     }
 /*FLEX BOX*/
-    .container {
+    .colCont {
         display: flex;
         flex-direction: column;
         background-color: #be95c4;
         padding: 5px;
-        border: solid 1px;
+        margin: 1px;
         border-radius: 5px;
     }
+    .colItem {
 
-    .item {
+    }
 
+    .rowCont {
+        display: flex;
+        background-color: #be95c4;
+        padding: 5px;
+        margin: 1px;
+        border-radius: 5px;
+        align-items: center;
+    }
+    .rowItem1 {
+        flex-shrink: 1;
+    }
+    .rowItem2 {
+        flex-shrink: 2;
     }
 
     .dir {
@@ -142,7 +156,7 @@
         flex-wrap: wrap;
     }
     .dirButton {
-        margin: 1px auto 0 auto;
+        margin: 0px;
         padding: 10px;
         border-radius: 5px;
         border: solid 1px;
