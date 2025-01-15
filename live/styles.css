@@ -138,12 +138,13 @@
     .dir {
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
         align-content: flex-start;
+        flex-wrap: wrap;
     }
     .dirButton {
         margin: 1px auto 0 auto;
         padding: 10px;
         border-radius: 5px;
         border: solid 1px;
+        flex-grow: 1;
     }

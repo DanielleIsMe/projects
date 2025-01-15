@@ -308,4 +308,18 @@ With flexbox, elements adapt in size to fit perfectly on different screens. Pres
     /*The gap property in Flexbox is used to set the spacing between flex items.*/
     gap: 20px;
     /*The transition and hover CSS properties are used to create smooth animations on elements when a specific action occurs, like when a user hovers over them.*/
+
+    /*To change the size of flex items across the main axis, we use the flex-basis property.*/
+    /*All flex items have flex-basis set to auto by default. When we use auto, items are only as wide as their content.*/
+    /*flex-basis is a flex item property. Flex item properties only work inside of flex item rules and don't work inside of flex container rules.*/
+    /*We can set the size of items with pixel values*/
+    /*If we want to set the size of flex items in percentages, we can.*/
+    /*flex-basis is tied to the main axis and adapts based on flex-direction. If we have columns, flex-basis sets the item's height.*/
+    flex-basis: auto;    
+    
+    /*To control how a flex item grows across its main axis, we use flex-grow inside a flex item rule.*/
+    /*The default value for flex-grow is 0, That means that the item doesn't adapt in size at all and is only as wide as its content. Code 0.*/
+    /*to make an item grow, we set the value to 1*/
+    /*this property works similarly to z-index, where the item with the higher number will take priority, and will take up more space.*/
+    /*Items with bigger flex-grow values get more of the empty space left inside the container. A smaller container means they get less space.*/
 }
