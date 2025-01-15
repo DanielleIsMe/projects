@@ -16,9 +16,14 @@
             <input type="number" id="input">
             <button onclick="guess()">Submit Guess</button>
             <p id="feedback"></p>
-            <img src="images/guessingGameImg.jpg" class="">
+            <img src="images/guessingGameImg.jpg" class="thumbnail" onclick="showModal(this)">
         </div>
     </div>
+    <div id="modal">
+        <span id="modalClose" onclick="hideModal()">X</span>
+        <img id="modalContent">
+    </div>
         <script src="scripts/guessingGame.js"></script>
+        <script src="scripts/script.js"></script>
     </body>
 </html>
