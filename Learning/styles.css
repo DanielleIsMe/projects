@@ -287,4 +287,25 @@ With flexbox, elements adapt in size to fit perfectly on different screens. Pres
     /*To keep space between items and have the first and last items close to the sides of the container, we use the space-between value.*/
     justify-content: space-between;
     /*if we set flex direction to column, the same applies, but the main axis is vertical instead*/
+    /*To align items along the cross axis, we use the align-items property.*/
+    align-items: stretch;
+    /*The default value flex items have for align-items is stretch. This setting makes elements fill up the entire cross axis.*/
+    /*If align-items is set to flex-start, items take the size of their content instead of stretching to fit the container and are at the beginning of the cross axis.*/
+    align-items: flex-start;
+    /*Setting align-items to flex-end pushes items to the end of the cross axis.*/
+    align-items: flex-end;
+    /*To center items inside the container, we use center.*/
+    align-items: center;
+    /*To stop elements from overflowing outside of the container, we use the flex-wrap property.*/
+    flex-wrap: wrap;
+    /*The default value for flex-wrap is nowrap. That means if objects can't shrink anymore inside the container, they overflow outside of it.*/
+    /*If we want items that don't fit to go to the top of the container instead of the bottom, we use wrap-reverse.*/
+    /*To control the space around wrapped rows of items, we use the align-content property. This affects rows across the cross axis.*/
+    align-content: flex-start;
+    /*The default value for align-content is stretch, which makes rows of flex items stretch on the cross axis.*/
+    /*To add space between rows across the cross axis, we can use the space-around value.*/
+    align-content: space-around;
+    /*The gap property in Flexbox is used to set the spacing between flex items.*/
+    gap: 20px;
+    /*The transition and hover CSS properties are used to create smooth animations on elements when a specific action occurs, like when a user hovers over them.*/
 }
