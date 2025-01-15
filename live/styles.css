@@ -2,7 +2,7 @@
     html{
         margin: 0px auto auto auto;
         background-color: #252138;
-        max-width: 700px;
+        max-width: 800px;
     }
     body {
         background-color: #252138;
@@ -102,11 +102,12 @@
     }
 /*SOURCES*/
     img {
-        width: 100%;
+        width: 75%;
         border-radius: 10px;
     }
 
     .paragraphImgRight {
+        margin: 5px 0 5px 0;
         float: right;
         width: 30%;
     }
@@ -158,6 +159,11 @@
         border-radius: 5px;
         border: solid 1px;
         flex: 1 1 auto;
+        transition: flex 0.5s;
+    }
+    .dirButton:hover {
+        flex: 10 1 auto;
+        transition: flex 0.5s;
     }
 /*MODAL IMAGE FORM*/
     .thumbnail {
