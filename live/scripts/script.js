@@ -78,16 +78,21 @@ function adviceSubmission() {
     adviceThanks.innerHTML = "Thank you for your feedback!"
 }
 
-//MODALS
-const modal = document.getElementById("modal");
-const modalContent = document.getElementById("modalContent");
-const thumbnail = document.querySelector(".thumbnail");
+//MODAL FORM TO FOCUS ON AN IMAGE
 
-function showModal() {
+//Pulls div element containing img and span element
+const modal = document.getElementById("modal");
+//pulls the img element in our modal div
+const modalContent = document.getElementById("modalContent");
+//img in parentheses ensure we are pulling the image that we clicked on.
+function showModal(img) {
+    //modal is set to none so we cannot see it, then once the function is triggered it is set to block.
     modal.style.display = "block";
-    modalContent.src = thumbnail.src;
+    //we pull the img we clicked on to display in the modalContent img element
+    modalContent.src = img.src;
 }
 
 function hideModal() {
+    //sets modal display back to none so that it disappears
     modal.style.display = "none";
 }

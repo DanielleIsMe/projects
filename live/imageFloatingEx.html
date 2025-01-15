@@ -11,20 +11,24 @@
     <div class="colCont">
         <div class="item">
             <h2>Floating Images on a webpage</h2>
-            <img src="images/cssFloatExample.jpg" class="paragraphImgRight">
+            <img src="images/cssFloatExample.jpg" class="paragraphImgRight thumbnail" onclick="showModal(this)">
             <p>It's possible to wrap text around images on a webpage using 
                 the float property in CSS! to wrap text around an image, we 
                 first place an element with text below the image element, then 
                 in our stylesheet we set the float property to left or right.</p>
-            <img src="images/cssClearExample.jpg" class="paragraphImgLeft">
+            <img src="images/cssClearExample.jpg" class="paragraphImgLeft thumbnail" onclick="showModal(this)">
             <p>If we want to have a second element below the first, but we dont want 
                 it to wrap, then we can use the clear property to remove the float 
                 from the second element</p>
             <p class="second">Adding the clear property to a text element stops it from wrapping around the 
                 floated image.  Subsequent text elements will also be affected by this.</p>
-            <img src="images/htmlFloatExample.jpg" class="exampleImg">
+            <img src="images/htmlFloatExample.jpg" class="exampleImg thumbnail" onclick="showModal(this)">
         </div>
     </div>
-    <script href="scripts/script.js"></script>
+    <div id="modal">
+        <span id="modalClose" onclick="hideModal()">X</span>
+        <img id="modalContent">
+    </div>
+    <script src="scripts/script.js"></script>
     </body>
 </html>
