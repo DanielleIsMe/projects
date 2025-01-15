@@ -1,20 +1,5 @@
-//to tell html elements how to respond, we need to identify them.
-//to identify them, we use the id attribute in our html file.
-//then, we can access the HTML elements of our webpage using 
-// the document keyword. document represents our webpage.
-//Now, to interact with an HTML element, we need the document.getElementById() instruction.
-function showSecret() {
-    //we use the innerHTML property to change the content of an HTML element.
-    const img = document.getElementById("secret")
-    img.setAttribute("src" , "chewingcharacter.gif");
-}
-function hideSecret() {
-    const img = document.getElementById("secret")
-    img.removeAttribute("src" , "");
-}
+//UNIT CONVERSION
 
-//logical expression function to convert a value in miles to kilometers and vice versa. this code
-//block is responsible for the conversion of the values.
 function convert() {
 //getElementById() method returns the HTML element that has the ID attribute with the specified value.
 //To access the input from a select element, we need to get the element and use .value. 
@@ -49,7 +34,6 @@ resultElement.innerHTML = resultString;
 
 }
 
-//function to clear the result of the conversion.
 function clearString() {
     document.getElementById("result").innerHTML = "";
     //even though we previously declared the inputElement variable, it cannot be used 
@@ -58,6 +42,8 @@ function clearString() {
     const inputElement = document.getElementById("input");
     inputElement.value = "";
 }
+
+//SKILLS TOTAL
 
 function showSkillsTotal() {
     const li = document.getElementsByTagName("li")
@@ -80,7 +66,7 @@ function adviceSubmission() {
 
 //MODAL FORM TO FOCUS ON AN IMAGE
 
-//Pulls div element containing img and span element
+//modal constant pulls div element containing img and span element
 const modal = document.getElementById("modal");
 //pulls the img element in our modal div
 const modalContent = document.getElementById("modalContent");
