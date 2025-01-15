@@ -140,10 +140,10 @@
         align-items: center;
     }
     .rowItem1 {
-        flex: 0 2 700px;
+        flex: 0 2 auto;
     }
     .rowItem2 {
-        flex: 1 1 700px;
+        flex: 1 1 auto;
     }
 
     .dir {
