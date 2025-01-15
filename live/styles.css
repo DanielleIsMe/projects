@@ -10,6 +10,7 @@
         font-family: Arial, Helvetica, sans-serif;
         vertical-align: middle;
         color: #231942;
+        box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.8);
     }
 /*FILLABLES, INTERACTABLES*/
     button {
@@ -75,6 +76,28 @@
     }
     textarea:hover {
         background-color: #e0ccd7;
+    }
+    .dropBtn {
+        margin: 0px;
+        padding: 10px;
+        border-radius: 5px;
+        border: solid 1px;
+        flex: 1 1 auto;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        flex: 1 1 auto;
+    }
+    .dropContent {
+        display: none;
+        position: absolute;
+        min-width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown:hover .dropContent {
+        display: block;
     }
 /*TEXT*/
     h1 {
@@ -159,11 +182,6 @@
         border-radius: 5px;
         border: solid 1px;
         flex: 1 1 auto;
-        transition: flex 0.5s;
-    }
-    .dirButton:hover {
-        flex: 10 1 auto;
-        transition: flex 0.5s;
     }
 /*MODAL IMAGE FORM*/
     .thumbnail {
