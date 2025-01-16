@@ -90,14 +90,20 @@
         flex: 1 1 auto;
     }
     .dropContent {
-        display: none;
+        visibility: hidden;
         position: absolute;
-        min-width: 100%;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        width: 100%;
+        opacity: 0;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
         z-index: 1;
+        transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
+        transform: scaleY(0);
+        transform-origin: top;
     }
     .dropdown:hover .dropContent {
-        display: block;
+        visibility: visible;
+        opacity: 1;
+        transform: scaleY(1);
     }
 /*TEXT*/
     h1 {
